@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  height: 1024px;
+  width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.brand {
+  padding-top: 82px;
+  width: 92px;
+  height: 30px;
+}
+
+h1 {
+  padding-top: 50px;
+  font-size: 38px;
+  color: #969696;
+  display: inline-block;
+  font-weight: 300;
+}
+
+.bold {
+  color: black;
+  font-weight: 700;
+}
+
+h4 {
+  padding-top: 30px;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.email {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  padding-left: 10%;
+}
+
+.email input {
+  height: 60px;
+  max-width: 424px;
+  -ms-flex-preferred-size: 95%;
+      flex-basis: 95%;
+  border-radius: 30px;
+  border: 1px solid #c2d3ff;
+  text-indent: 20px;
+  font-size: 12px;
+}
+
+.email ::-webkit-input-placeholder {
+  color: #969696;
+  opacity: 0.5;
+}
+
+.email :-ms-input-placeholder {
+  color: #969696;
+  opacity: 0.5;
+}
+
+.email ::-ms-input-placeholder {
+  color: #969696;
+  opacity: 0.5;
+}
+
+.email ::placeholder {
+  color: #969696;
+  opacity: 0.5;
+}
+
+.email button {
+  margin-left: 20px;
+  height: 60px;
+  max-width: 202px;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  border-radius: 30px;
+  border: none;
+  background: #4d7bf3;
+  color: white;
+  cursor: pointer;
+}
+
+.email button:hover {
+  opacity: 0.8;
+}
+
+.email .error {
+  visibility: hidden;
+  color: red;
+  font-size: 10px;
+  font-style: italic;
+  padding-left: 20px;
+  -ms-flex-preferred-size: 95%;
+      flex-basis: 95%;
+}
+
+.cta {
+  padding-top: 82px;
+}
+
+.cta img {
+  width: 644px;
+  height: 392px;
+}
+
+.social-icons {
+  padding-top: 72px;
+}
+
+p {
+  padding: 30px 0px 50px 0px;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1439px) {
+  .container {
+    height: initial;
+    width: initial;
+  }
+  .cta {
+    padding: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cta img {
+    width: 95%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 807px) {
+  .email button {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 404px) {
+  h1 {
+    font-size: 25px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
