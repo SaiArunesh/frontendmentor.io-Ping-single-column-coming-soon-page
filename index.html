@@ -34,9 +34,20 @@
 			</div>
 			<h4>Subscribe and get notified</h4>
 			<div class="email">
-				<input type="email" name="email" id="email" required />
-				<button type="submit">Notify Me</button>
+				<input
+					type="email"
+					name="email"
+					id="email"
+					required
+					placeholder="Your email address..."
+				/>
+				<button type="submit" id="notify">Notify Me</button>
+				<br />
+				<span class="error" id="error"
+					>Please provide a valid email address</span
+				>
 			</div>
+
 			<div class="cta">
 				<img src="./images/illustration-dashboard.png" alt="" />
 			</div>
@@ -56,5 +67,20 @@
 				<a href="https://saiarunesh.github.io/portfolio/">Sai Arunesh</a>.
 			</p>
 		</footer>
+		<script>
+			var btn = document.getElementById('notify');
+			btn.addEventListener('click', () => {
+				let el = document.getElementById('email');
+				if (validateEmail(el.value)===false) {
+					document.getElementById('error').style.visibility = 'visible';
+				} else {
+					document.getElementById('error').style.visibility = 'hidden';
+				}
+			});
+			function validateEmail(email) {
+				var re = /\S+@\S+\.\S+/;
+				return re.test(email);
+			}
+		</script>
 	</body>
 </html>
